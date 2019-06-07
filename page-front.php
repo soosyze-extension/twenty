@@ -2,7 +2,7 @@
 <!-- Header -->
 <header id="header" class="alt">
     <h1 id="logo">
-        <?php if( $logo ): ?>
+        <?php if ($logo): ?>
             <span class="logo">
                 <a href="<?php echo $base_path; ?>">
                     <img src="<?php echo $logo; ?>" alt="Logo site" class="img-responsive logo">
@@ -50,7 +50,7 @@
     <section class="wrapper style3 container special">
         <header class="major">
             <h2><?php echo $title_main; ?></h2>
-            <?php if( !empty($block[ 'messages' ]) ): ?>
+            <?php if (!empty($block[ 'messages' ])): ?>
                 <?php echo $block[ 'messages' ]; ?>
             <?php endif; ?>
         </header>
@@ -123,11 +123,11 @@
 <!-- Footer -->
 <footer id="footer">
     <ul class="icons">
-        <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-        <li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-        <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+        <li><a href="#" class="icon circle fab fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon circle fab fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon circle fab fa-google-plus"><span class="label">Google+</span></a></li>
+        <li><a href="#" class="icon circle fab fa-github"><span class="label">Github</span></a></li>
+        <li><a href="#" class="icon circle fab fa-dribbble"><span class="label">Dribbble</span></a></li>
     </ul>
     
     <?php echo $block[ 'second_menu' ]; ?>

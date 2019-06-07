@@ -1,8 +1,8 @@
 
 <section class="wrapper style3 container special">
     <div class="row">
-        <?php if( $nodes ): ?>
-            <?php foreach( $nodes as $key => $node ): ?>
+        <?php if ($nodes): ?>
+            <?php foreach ($nodes as $node): ?>
                 <?php $node[ 'field' ] = unserialize($node[ 'field' ]); ?>
 
                 <div class="col-6 col-12-narrower">

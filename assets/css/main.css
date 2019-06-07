@@ -1,6 +1,4 @@
-@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
-
 /*
         Twenty by HTML5 UP
         html5up.net | @ajlkn
@@ -1928,15 +1926,6 @@ input[type="email"] {
 .icon {
     text-decoration: none;
     position: relative;
-}
-
-.icon:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
 }
 
 .icon.circle {
