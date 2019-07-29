@@ -14,7 +14,7 @@
 
     <!-- Nav -->
     <nav id="nav">
-        <?php echo $block[ 'main_menu' ]; ?>
+        <?php echo $section[ 'main_menu' ]; ?>
     </nav>
 </header>
 
@@ -50,12 +50,12 @@
     <section class="wrapper style3 container special">
         <header class="major">
             <h2><?php echo $title_main; ?></h2>
-            <?php if (!empty($block[ 'messages' ])): ?>
-                <?php echo $block[ 'messages' ]; ?>
+            <?php if (!empty($section[ 'messages' ])): ?>
+                <?php echo $section[ 'messages' ]; ?>
             <?php endif; ?>
         </header>
 
-        <?php echo $block[ 'content' ] ?>
+        <?php echo $section[ 'content' ] ?>
     </section>
 
     <section class="wrapper style1 container special">
@@ -130,5 +130,5 @@
         <li><a href="#" class="icon circle fab fa-dribbble"><span class="label">Dribbble</span></a></li>
     </ul>
     
-    <?php echo $block[ 'second_menu' ]; ?>
+    <?php echo $section[ 'second_menu' ]; ?>
 </footer>

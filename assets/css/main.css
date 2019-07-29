@@ -2391,17 +2391,18 @@ button.small,
 }
 
 #header nav ul li.submenu > a:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    display: inline-block;
     font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Font Awesome\ 5 Free';
 }
 
 #header nav ul li.submenu > a:before {
-    content: '\f107';
+    content: '\f078';
     margin-right: 0.65em;
+    font-weight: 900;
 }
 
 #header nav ul li.active > a, #header nav ul li:hover > a {
@@ -3020,12 +3021,11 @@ body.index #main {
     }
 
     #navButton .toggle:before {
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
+        font-family: 'Font Awesome 5 Free';
         font-style: normal;
-        font-weight: normal;
-        text-transform: none !important;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
     }
 
     #navButton .toggle:before {
@@ -3040,6 +3040,7 @@ body.index #main {
         top: 11px;
         width: 60px;
         z-index: 1;
+        font-weight: 900;
     }
 
     #navButton .toggle:after {
