@@ -22,6 +22,9 @@
 <article id="main">
     <header class="container">
         <h2><?php echo $title_main; ?></h2>
+        <?php if (!empty($section[ 'header' ])): ?>
+            <?php echo $section[ 'header' ]; ?>
+        <?php endif; ?>
     </header>
 
     <!-- One -->
@@ -32,36 +35,35 @@
                 <?php if (!empty($section[ 'messages' ])): ?>
                     <?php echo $section[ 'messages' ]; ?>
                 <?php endif; ?>
-                <?php echo $section[ 'content' ] ?>
+                <?php if (!empty($section[ 'content_header' ])): ?>
+                    <?php echo $section[ 'content_header' ]; ?>
+                <?php endif; ?>
+                <?php echo $section[ 'content' ]; ?>
+                <?php if (!empty($section[ 'content_footer' ])): ?>
+                    <?php echo $section[ 'content_footer' ]; ?>
+                <?php endif; ?>
             </section>
         </div>
     </section>
+
+    <?php if (!empty($section[ 'footer_first' ])): ?>
+        <section class="wrapper style1 container special">
+            <?php echo $section[ 'footer_first' ]; ?>
+        </section>
+    <?php endif; ?>
 </article>
 
-<!-- CTA -->
-<section id="cta">
-    <header>
-        <h2>Ready to do <strong>something</strong>?</h2>
-        <p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
-    </header>
-
-    <footer>
-        <ul class="buttons">
-            <li><a href="#" class="button primary">Take My Money</a></li>
-            <li><a href="#" class="button">LOL Wut</a></li>
-        </ul>
-    </footer>
-</section>
+<?php if (!empty($section[ 'footer_second' ])): ?>
+    <!-- CTA -->
+    <section id="cta">
+        <?php echo $section[ 'footer_second' ]; ?>
+    </section>
+<?php endif; ?>
 
 <!-- Footer -->
 <footer id="footer">
-    <ul class="icons">
-        <li><a href="#" class="icon circle fab fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon circle fab fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon circle fab fa-google-plus"><span class="label">Google+</span></a></li>
-        <li><a href="#" class="icon circle fab fa-github"><span class="label">Github</span></a></li>
-        <li><a href="#" class="icon circle fab fa-dribbble"><span class="label">Dribbble</span></a></li>
-    </ul>
-
+    <?php if (!empty($section[ 'footer' ])): ?>
+        <?php echo $section[ 'footer' ]; ?>
+    <?php endif; ?>
     <?php echo $section[ 'second_menu' ]; ?>
 </footer>

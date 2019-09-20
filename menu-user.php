@@ -1,6 +1,5 @@
 <ul class="copyright">
     <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-    <li>Power by <a href="https://soosyze.com">SoosyzeCMS</a></li>
     <?php foreach ($menu as $link): ?>
 
         <li class="<?php echo $link[ 'link_active' ]; ?>">
