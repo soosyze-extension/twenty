@@ -3488,3 +3488,7 @@ table.alt tfoot {
     border-radius: 50px;
     width: 2em;
 }
+.logo_a {
+    position: relative;
+    top: -8px;
+}
