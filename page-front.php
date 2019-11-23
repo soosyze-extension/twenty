@@ -9,7 +9,7 @@
                 </a>
             </span>
         <?php endif; ?>
-        <a href="<?php echo $base_path; ?>"><?php echo $title; ?></a>
+        <a class="logo_a" href="<?php echo $base_path; ?>"><?php echo $title; ?></a>
     </h1>
 
     <!-- Nav -->
