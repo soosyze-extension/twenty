@@ -1,12 +1,12 @@
 
-<section class="wrapper style3 container special">
+<section class="special">
     <div class="row">
         <?php if ($news): ?>
             <?php foreach ($news as $new): ?>
 
                 <div class="col-6 col-12-narrower">
                     <section>
-                        <a class="image featured" href="#">
+                        <a class="image featured" href="<?php echo $new[ 'link_view' ]; ?>">
                             <img src="<?php echo $new[ 'field' ][ 'image' ][ 'field_value' ]; ?>" alt="Illustration <?php echo $new[ 'title' ]; ?>">
                         </a>
                         <header>

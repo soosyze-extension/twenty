@@ -7,6 +7,7 @@
         "soosyze-theme": {
             "sections": [
                 "header",
+                "sidebar",
                 "content_header",
                 "content_footer",
                 "footer",

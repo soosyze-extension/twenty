@@ -20,49 +20,32 @@
 
 <!-- Main -->
 <article id="main">
-    <header class="container">
+    <header class="special container">
+        <span class="icon solid fa fa-envelope"></span>
         <h2><?php echo $title_main; ?></h2>
         <?php if (!empty($section[ 'header' ])): ?>
             <?php echo $section[ 'header' ]; ?>
         <?php endif; ?>
+
     </header>
 
-    <section class="wrapper style4 container">
-        <div class="row gtr-150">
-            <?php if (!empty($section[ 'sidebar' ])): ?>
-                <div class="col-4 col-12-narrower">
-
-                    <div class="sidebar">
-                        <?php echo $section[ 'sidebar' ]; ?>
-                    </div>
-                </div>
+    <!-- One -->
+    <section class="wrapper style4 special container medium">
+        <!-- Content -->
+        <div class="content">
+            <?php if (!empty($section[ 'messages' ])): ?>
+                <?php echo $section[ 'messages' ]; ?>
             <?php endif; ?>
-            <?php
-            echo empty($section[ 'sidebar' ])
-                ? '<div>'
-                : '<div class="col-8 col-12-narrower imp-narrower">';
-            ?>
-            <section>
 
-                <div class = "content">
-                    <?php if (!empty($section[ 'messages' ])):
-                        ?>
-                        <?php echo $section[ 'messages' ]; ?>
-                    <?php endif; ?>
+            <?php if (!empty($section[ 'content_header' ])): ?>
+                <?php echo $section[ 'content_header' ]; ?>
+            <?php endif; ?>
 
-                    <?php if (!empty($section[ 'content_header' ])): ?>
-                        <?php echo $section[ 'content_header' ]; ?>
-                    <?php endif; ?>
+            <?php echo $section[ 'content' ]; ?>
 
-                    <?php echo $section[ 'content' ]; ?>
-
-                    <?php if (!empty($section[ 'content_footer' ])): ?>
-                        <?php echo $section[ 'content_footer' ]; ?>
-                    <?php endif; ?>
-                </div>
-            </section>
-            <?php echo '</div>'; ?>
-
+            <?php if (!empty($section[ 'content_footer' ])): ?>
+                <?php echo $section[ 'content_footer' ]; ?>
+            <?php endif; ?>
         </div>
     </section>
 
