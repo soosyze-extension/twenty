@@ -2,7 +2,6 @@
 
 html5up.net | @ajlkn | AJ | aj@lkn.io
 
-
 This is Twenty, a minimal, multi-page responsive site template for HTML5 UP.
 
 As the name implies, this is my twentieth (!) design for HTML5 UP. Since the last
@@ -22,7 +21,6 @@ PS: Not sure how to get that contact form working? Give formspree.io a try (it's
 ## License
 
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
 
 ## Credits
 
