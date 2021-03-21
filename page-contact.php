@@ -9,7 +9,7 @@
                 </a>
             </span>
         <?php endif; ?>
-        <a class="logo_a" href="<?php echo $base_path; ?>"><?php echo $title; ?></a>
+        <a class="logo_a" href="<?php echo $base_path; ?>"><?php echo htmlspecialchars($title); ?></a>
     </h1>
 
     <!-- Nav -->
@@ -40,6 +40,8 @@
             <?php if (!empty($section[ 'content_header' ])): ?>
                 <?php echo $section[ 'content_header' ]; ?>
             <?php endif; ?>
+
+            <?php echo $section[ 'submenu' ]; ?>
 
             <?php echo $section[ 'content' ]; ?>
 

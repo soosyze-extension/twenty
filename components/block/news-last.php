@@ -10,7 +10,7 @@
 
                         <header class="icon_default">
                             <a href="<?php echo $new[ 'link_view' ]; ?>">
-                                <i class="icon <?php echo $new[ 'field' ][ 'icon' ][ 'field_value' ]; ?>"></i>
+                                <i class="icon <?php echo htmlspecialchars($new[ 'field' ][ 'icon' ][ 'field_value' ]); ?>"></i>
                             </a>
                         </header>
                     <?php else: ?>
@@ -30,10 +30,10 @@
                             </small>
                         <?php endif; ?>
 
-                        <h3 class="card__title"><a href="<?php echo $new[ 'link_view' ]; ?>"><?php echo $new[ 'title' ]; ?></a></h3>
+                        <h3 class="card__title"><a href="<?php echo $new[ 'link_view' ]; ?>"><?php echo t($new[ 'title' ]); ?></a></h3>
 
                         <div class="card__text">
-                            <?php echo $new[ 'field' ][ 'summary' ][ 'field_display' ]; ?>
+                            <?php echo xss($new[ 'field' ][ 'summary' ][ 'field_display' ]); ?>
                         </div>
                     </div>
 
@@ -44,7 +44,9 @@
                                 <?php echo strftime('%d %B, %Y', $new[ 'date_created' ]); ?>
                                 -
                                 <i class="fa fa-clock"></i> 
-                                ~<?php echo $new[ 'field' ][ 'reading_time' ][ 'field_value' ] . ' ' . t('minute(s)'); ?>
+                                ~<?php echo $new[ 'field' ][ 'reading_time' ][ 'field_value' ]
+                                . ' '
+                                . t(if_or($new[ 'field' ][ 'reading_time' ][ 'field_value' ] === 1, 'minute', 'minutes')); ?>
                             </span>
                         </div>
                     </div>
@@ -56,7 +58,7 @@
     <?php if ($is_link_more): ?>
         <footer class="major">
             <ul class="buttons">
-                <li><a href="<?php echo $link_more; ?>" class="btn btn-primary"><?php echo t('Toutes les actualités'); ?></a></li>
+                <li><a href="<?php echo $link_more; ?>" class="btn btn-primary"><?php echo t('All news'); ?></a></li>
             </ul>
         </footer>
     <?php endif; ?>

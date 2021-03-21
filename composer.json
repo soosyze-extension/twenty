@@ -2,9 +2,16 @@
     "name": "soosyze-extension/twenty",
     "type": "soosyze-theme",
     "description": "This is Twenty, a minimal, multi-page responsive site template for HTML5 UP.",
-    "version": "1.0",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "SoosyzeApp\\Theme\\Twenty\\": "/"
+        }
+    },
     "extra": {
-        "soosyze-theme": {
+        "soosyze": {
+            "title": "Twenty",
+            "screenshot": "screenshot.png",
             "sections": [
                 "header",
                 "sidebar",

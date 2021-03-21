@@ -9,7 +9,7 @@
                 </a>
             </span>
         <?php endif; ?>
-        <a class="logo_a" href="<?php echo $base_path; ?>"><?php echo $title; ?></a>
+        <a class="logo_a" href="<?php echo $base_path; ?>"><?php echo htmlspecialchars($title); ?></a>
     </h1>
 
     <!-- Nav -->
@@ -28,7 +28,7 @@
     -->
     <div class="inner">
         <header>
-            <h2><?php echo $title; ?></h2>
+            <h2><?php echo htmlspecialchars($title); ?></h2>
         </header>
 
         <?php if (!empty($section[ 'header' ])): ?>
@@ -41,7 +41,7 @@
 <article id="main">
     <section class="wrapper style3 container special">
         <header class="major">
-            <h2><?php echo $title_main; ?></h2>
+            <h2><?php echo htmlspecialchars($title_main); ?></h2>
             <?php if (!empty($section[ 'messages' ])): ?>
                 <?php echo $section[ 'messages' ]; ?>
             <?php endif; ?>
